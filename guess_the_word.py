@@ -1,5 +1,4 @@
 import random
-import unittest
 
 def random_func(num):
 
@@ -55,13 +54,4 @@ while turns_left != 0:
 
         if turns_left == 0:
             print("Too bad! You lose...")
-
-class TestGuesstheWord(unittest.TestCase):
-    def test_word_choice():
-        
-        self.assertEqual(random_func(1), "football")
-
-if __name__ == "__main__":
-    unittest.main()
-
             
