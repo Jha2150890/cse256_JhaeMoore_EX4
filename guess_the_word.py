@@ -25,6 +25,8 @@ while turns_left != 0:
     for x in random_choice:
         if x in letter:
             print(x, end=" \n")
+            def correct_func():
+                return True 
 
         else:
             print("_")
@@ -49,8 +51,11 @@ while turns_left != 0:
     if letter_guess not in random_choice:
 
         turns_left -= 1
+        def wrong_func():
+            return False
         print("That is wrong.")
         print(f"You have {turns_left} turns left")
+        
 
         if turns_left == 0:
             print("Too bad! You lose...")
